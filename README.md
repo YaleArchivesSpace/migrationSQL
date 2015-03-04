@@ -13,7 +13,7 @@ Before migration
 
 After migration
 
-1. Accession uniqueness validation step. This happens in AT. This is checking to make sure that the columns we select are unique to the accessions table. -- all DBs
+1. Accession uniqueness validation step. This happens in AT. This is checking to make sure that the columns we select result in a complete set of unique rows in the accessions table. -- all DBs
 
 2. Updating created and updated timestamps and users from AT to ASpace. We need to test what happens with agent records from AT not yet in ASpace -- all DBs
 
