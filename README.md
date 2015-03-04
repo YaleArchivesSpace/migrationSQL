@@ -5,11 +5,11 @@ Task list, in sequence
 
 Before migration
 
-1. Delete userDefinedBoolean1 from MSSA Accessions table (Maureen) -- only MSSA DB
+1. Delete userDefinedBoolean1 from MSSA Accessions table (Maureen) -- only MSSA DB - WRITTEN
 
-2. ns2: -> xlink -- all DBs
+2. ns2: -> xlink -- all DBs - WRITTEN
 
-3. Clean up Series IDs -- all DBs
+3. Clean up Series IDs -- all DBs - WRITTEN
 
 After migration
 
