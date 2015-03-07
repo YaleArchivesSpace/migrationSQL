@@ -11,7 +11,7 @@ Before migration
 
 3. Clean up Series IDs -- all DBs - WRITTEN
 
-4. Change roman numeral Series unitids to arabic
+4. Change roman numeral Series unitids to arabic - WRITTEN
 
 5. We also need to do another barcode test, since the migration tool will now fail if our barcodes don’t match what’s required by the top_containers plugin.
 
