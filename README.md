@@ -13,7 +13,7 @@ Before migration
 
 4. Change roman numeral Series unitids to arabic - WRITTEN
 
-5. We also need to do another barcode test, since the migration tool will now fail if our barcodes don’t match what’s required by the top_containers plugin.
+5. We also need to do another barcode test, since the migration tool will now fail if our barcodes don’t match what’s required by the top_containers plugin. -- checked MSSA, all barcodes are now 14 digits.
 
 6. What else? 
 
