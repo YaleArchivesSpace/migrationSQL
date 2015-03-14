@@ -22,7 +22,7 @@ SET title = REPLACE(title, 'ns2:', 'xlink:');
 UPDATE Resources
 SET dateExpression = REPLACE(dateExpression, 'ns2:', 'xlink:');
 UPDATE ResourcesComponents
-SET dateExpression  = REPLACE(dateExpression , 'ns2:', 'xlink:')
+SET dateExpression  = REPLACE(dateExpression , 'ns2:', 'xlink:');
 
 /* Clean up series identifiers */
 /* This looks for the string "series" in the component unique identifier and makes sure that the level is series. */
