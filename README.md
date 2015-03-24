@@ -52,3 +52,4 @@ After migration
 
 14. (Mark + Mike, some manual cleanup involved), Payments module updates  -- BRBL DB only
 
+15. Re-attach names and subjects to resources, accessions and archival_objects. We should come up with a good plan for this -- All DBs (Adam, Mark and Maureen)
