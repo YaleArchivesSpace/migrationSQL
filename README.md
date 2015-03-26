@@ -11,11 +11,11 @@ Before migration
 
 3. Clean up Series IDs -- all DBs - WRITTEN
 
-4. Change roman numeral Series unitids to arabic - WRITTEN
+4. Change roman numeral Series unitids to arabic - WRITTEN (need to update to for additional variations, ahd even higher roman numerals, unfortunately)
 
 5. We also need to do another barcode test, since the migration tool will now fail if our barcodes don’t match what’s required by the top_containers plugin. -- checked MSSA, all barcodes are now 14 digits.
 
-6. Query which notes are more than 65K characters, hold onto them.
+6. Query which notes are more than 65K characters, hold onto them (and then? Beinecke has 3 of these, Divinity has 1. How many, if any, for MSSA?).
 
 7. What else? 
 
