@@ -11,7 +11,7 @@ Before migration
 
 3. Clean up Series IDs -- all DBs - WRITTEN
 
-4. Change roman numeral Series unitids to arabic - WRITTEN (need to update to for additional variations, ahd even higher roman numerals, unfortunately)
+4. Change roman numeral Series unitids to arabic - WRITTEN, accounts for numerals on their own or with a dot or colon. Roman numerals up to 100.
 
 5. We also need to do another barcode test, since the migration tool will now fail if our barcodes don’t match what’s required by the top_containers plugin. -- checked MSSA, all barcodes are now 14 digits.
 
