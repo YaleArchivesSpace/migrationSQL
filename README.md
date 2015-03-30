@@ -28,19 +28,19 @@ After migration
 
 2. Updating created and updated timestamps and users from AT to ASpace. We need to test what happens with agent records from AT not yet in ASpace -- (Adam) all DBs
 
-3. Move data from userDefinedBoolean2 into material type table (Mark), MSSA AT, row 56, "material types" update -- only MSSA DB
+3. Move data from userDefinedBoolean2 into material type table (Maureen), MSSA AT, row 56, "material types" update -- only MSSA DB
 
 4. Turn userDefinedDate2 into an event record with a handful of attributes. (Maureen will create a specification for this and Adam will tidy up the SQL work), MSSA AT, row 58, "event" update -- BRBL DB only
 
-5. Turn userDefinedReal1 into an extent subrecord (Mark), MSSA AT, row 61 -- MSSA DB only
+5. Turn userDefinedReal1 into an extent subrecord (Maureen), MSSA AT, row 61 -- MSSA DB only
 
-6. (Mark), BRBL AT, rows 8-9 -- BRBL DB only
+6. (Maureen), BRBL AT, rows 8-9 -- BRBL DB only
 
-7. (Mark), BRBL AT, rows 17-18  -- BRBL DB only
+7. (Maureen), BRBL AT, rows 17-18  -- BRBL DB only
 
 8. Move condition note into content_description,(Maureen), BRBL AT, row 234, -- BRBL DB only
 
-9. (Mark), BRBL AT, rows 51-52 -- BRBL DB only
+9. (Maureen), BRBL AT, rows 51-52 -- BRBL DB only
 
 10. Move userDefinedInteger1, userDefinedInteger2, userDefinedReal2 to extent subrecord (Maureen), BRBL AT, rows 59, 60, 62 -- BRBL DB only
 
