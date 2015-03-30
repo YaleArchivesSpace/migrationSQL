@@ -24,6 +24,12 @@ SET dateExpression = REPLACE(dateExpression, 'ns2:', 'xlink:');
 UPDATE ResourcesComponents
 SET dateExpression  = REPLACE(dateExpression , 'ns2:', 'xlink:');
 
+/* Clean up whitespace on indicators and barcodes */
+Update ArchDescriptionInstances
+set container1NumericIndicator=trim(container1NumericIndicator),
+container1AlphaNumIndicator=trim(container1AlphaNumIndicator),
+barcode=trim(barcode);
+
 /* Clean up series identifiers */
 /* This looks for the string "series" in the component unique identifier and makes sure that the level is series. */
 Update ResourcesComponents
