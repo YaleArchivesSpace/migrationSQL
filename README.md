@@ -15,7 +15,7 @@ Before migration
 
 5. We also need to do another barcode test, since the migration tool will now fail if our barcodes don’t match what’s required by the top_containers plugin. -- checked MSSA, all barcodes are now 14 digits.
 
-6. Query which notes are more than 65K characters, hold onto them (and then? Beinecke has 3 of these, Divinity has 1. How many, if any, for MSSA?).
+6. Query which notes are more than 65K characters, hold onto them (and then? Beinecke has 3 of these, Divinity has 1, MSSA has 0).
 
 7. What else? 
 
