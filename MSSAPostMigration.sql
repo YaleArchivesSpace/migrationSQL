@@ -17,3 +17,6 @@ FROM
 WHERE
     repository.repo_code = 'mssa'
         AND user_defined.boolean_1 IS NOT NULL
+
+Insert into material_types (accession_id, electronic_documents)
+select accession_id from user_defined where user_defined.boolean_1 is not null
