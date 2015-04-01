@@ -30,9 +30,9 @@ After migration
 
 3. Move data from userDefinedBoolean2 into material type table (Maureen), MSSA AT, row 56, "material types" update -- only MSSA DB -- DRAFTED
 
-4. Turn userDefinedDate2 into an event record with a handful of attributes. (Maureen will create a specification for this and Adam will tidy up the SQL work), MSSA AT, row 58, "event" update -- MSSA DB only
+4. Turn userDefinedDate2 into an event record with a handful of attributes. (Maureen will create a specification for this and Adam will tidy up the SQL work), MSSA AT, row 58, "event" update -- MSSA DB only -- questioning approach to this.
 
-5. Turn userDefinedReal1 into an extent subrecord (Maureen), MSSA AT, row 61 -- MSSA DB only
+5. Turn userDefinedReal1 into an extent subrecord (Maureen), MSSA AT, row 61 -- MSSA DB only -- DRAFTED
 
 6. (Maureen), BRBL AT, rows 8-9 -- BRBL DB only
 
