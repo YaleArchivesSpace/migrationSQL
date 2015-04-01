@@ -24,13 +24,13 @@ Before migration
 
 After migration
 
-1. Accession uniqueness validation step. This happens in AT. This is checking to make sure that the columns we select result in a complete set of unique rows in the accessions table. (Adam) -- all DBs
+1. Accession uniqueness validation step. This happens in AT. This is checking to make sure that the columns we select result in a complete set of unique rows in the accessions table. (Adam) -- all DBs -- WRITTEN
 
-2. Updating created and updated timestamps and users from AT to ASpace. We need to test what happens with agent records from AT not yet in ASpace -- (Adam) all DBs
+2. Updating created and updated timestamps and users from AT to ASpace. We need to test what happens with agent records from AT not yet in ASpace -- (Adam) all DBs -- WRITTEN, not tested
 
-3. Move data from userDefinedBoolean2 into material type table (Maureen), MSSA AT, row 56, "material types" update -- only MSSA DB
+3. Move data from userDefinedBoolean2 into material type table (Maureen), MSSA AT, row 56, "material types" update -- only MSSA DB -- DRAFTED
 
-4. Turn userDefinedDate2 into an event record with a handful of attributes. (Maureen will create a specification for this and Adam will tidy up the SQL work), MSSA AT, row 58, "event" update -- BRBL DB only
+4. Turn userDefinedDate2 into an event record with a handful of attributes. (Maureen will create a specification for this and Adam will tidy up the SQL work), MSSA AT, row 58, "event" update -- MSSA DB only
 
 5. Turn userDefinedReal1 into an extent subrecord (Maureen), MSSA AT, row 61 -- MSSA DB only
 
