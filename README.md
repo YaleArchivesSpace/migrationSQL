@@ -34,7 +34,7 @@ After migration
 
 5. Turn userDefinedReal1 into an extent subrecord (Maureen), MSSA AT, row 61 -- MSSA DB only -- DRAFTED
 
-6. (Maureen), BRBL AT, rows 8-9 -- BRBL DB only
+6. (Maureen), BRBL AT, rows 8-9, turn "processed" event records into "accession completed" -- BRBL DB only -- DRAFTED
 
 7. (Maureen), BRBL AT, rows 17-18  -- BRBL DB only
 
