@@ -28,8 +28,8 @@ SET dateExpression  = REPLACE(dateExpression , 'ns2:', 'xlink:');
 Update ArchDescriptionInstances
 set container1NumericIndicator=trim(container1NumericIndicator),
 container1AlphaNumIndicator=trim(container1AlphaNumIndicator),
-container2NumericIndicator=trim(container1NumericIndicator),
-container2AlphaNumIndicator=trim(container1AlphaNumIndicator),
+container2NumericIndicator=trim(container2NumericIndicator),
+container2AlphaNumIndicator=trim(container2AlphaNumIndicator),
 barcode=trim(barcode);
 
 /* Clean up series identifiers */
