@@ -24,6 +24,10 @@ SET dateExpression = REPLACE(dateExpression, 'ns2:', 'xlink:');
 UPDATE ResourcesComponents
 SET dateExpression  = REPLACE(dateExpression , 'ns2:', 'xlink:');
 
+/* Change everything to mixed materials */
+Update archdescriptioninstances
+set instanceType='Mixed materials';
+
 /* Clean up whitespace on indicators and barcodes */
 Update ArchDescriptionInstances
 set container1NumericIndicator=trim(container1NumericIndicator),
