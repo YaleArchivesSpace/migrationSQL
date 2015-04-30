@@ -37,3 +37,32 @@ last_modified_by, /* this will be updated */
 create_time, /* this will be updated */
 user_mtime /* this will be updated */
 FROM accession;
+
+/* update statement for real -- change database names for at database, aspace */
+UPDATE aspace.accession 
+join mssa.Accessions on aspace.accession.identifier = CONCAT('["',
+            mssa.Accessions.accessionNumber1,
+            '",',
+            IF(mssa.Accessions.accessionNumber2 = '',
+                'null',
+                CONCAT('"',
+                        mssa.Accessions.accessionNumber2,
+                        '"')),
+            ',',
+            IF(mssa.Accessions.accessionNumber3 = '',
+                'null',
+                CONCAT('"',
+                        mssa.Accessions.accessionNumber3,
+                        '"')),
+            ',',
+            IF(mssa.Accessions.accessionNumber4 = '',
+                'null',
+                CONCAT('"',
+                        mssa.Accessions.accessionNumber4,
+                        '"')),
+            ']') collate utf8_general_ci
+SET 
+    aspace.accession.created_by = (mssa.Accessions.createdBy collate utf8_general_ci),
+    aspace.accession.create_time = mssa.Accessions.created,
+    aspace.accession.last_modified_by = (mssa.Accessions.lastUpdatedBy collate utf8_general_ci),
+    aspace.accession.user_mtime = mssa.Accessions.lastUpdated
