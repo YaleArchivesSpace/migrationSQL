@@ -60,3 +60,26 @@ FROM
     ResourcesComponents series ON GETTOPCOMPONENT(rc.resourceComponentId) = series.resourceComponentID
 WHERE
     adi.barcode = ''
+
+/* Now run the fauxcodes! */
+use mssa;
+UPDATE ArchDescriptionInstances adi
+        JOIN
+    ResourcesComponents rc ON adi.resourceComponentId = rc.resourceComponentId
+        INNER JOIN
+    Resources r ON r.resourceId = GETRESOURCEFROMCOMPONENT(rc.resourceComponentId)
+        LEFT OUTER JOIN
+    ResourcesComponents series ON GETTOPCOMPONENT(rc.resourceComponentId) = series.resourceComponentID 
+SET 
+    barcode = CONCAT('Faux.',
+            CONCAT(r.resourceIdentifier1,
+                    LPAD(r.resourceIdentifier2, 4, '00')),
+            IF(series.subdivisionIdentifier <> '',
+                CONCAT('.series', series.subdivisionIdentifier),
+                ''),
+            '.',
+            adi.container1Type,
+            IFNULL(adi.container1NumericIndicator, ''),
+            IFNULL(adi.container1AlphaNumIndicator, ''))
+WHERE
+    adi.barcode = ''
