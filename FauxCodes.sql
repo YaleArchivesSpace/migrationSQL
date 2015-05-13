@@ -83,7 +83,8 @@ SET
             IFNULL(adi.container1AlphaNumIndicator, ''))
 WHERE
     adi.barcode = '';
-    
+update archDescriptionInstances set barcode=replace(barcode, ' ', '');
+
 /* deal with common slide boxes*/
 use mssa;
 update archDescriptionInstances set barcode='CS15'
