@@ -28,3 +28,35 @@ FROM
     ResourcesComponents series ON GETTOPCOMPONENT(rc.resourceComponentId) = series.resourceComponentID
 WHERE
     adi.barcode = ''
+
+/* Now, get a report of all of your components without barcodes and see what the fauxcodes will look like */
+
+use mssa;
+SELECT 
+    CONCAT(r.resourceIdentifier1,
+            LPAD(r.resourceIdentifier2, 4, '00')) CallNo,
+    r.title,
+    series.subdivisionIdentifier,
+    adi.container1Type,
+    adi.container1NumericIndicator,
+    adi.container1AlphaNumIndicator,
+    CONCAT('Faux.',
+            CONCAT(r.resourceIdentifier1,
+                    LPAD(r.resourceIdentifier2, 4, '00')),
+            IF(series.subdivisionIdentifier <> '',
+                CONCAT('.series', series.subdivisionIdentifier),
+                ''),
+            '.',
+            adi.container1Type,
+            IFNULL(adi.container1NumericIndicator, ''),
+            IFNULL(adi.container1AlphaNumIndicator, '')) fauxcode
+FROM
+    ArchDescriptionInstances adi
+        JOIN
+    ResourcesComponents rc ON adi.resourceComponentId = rc.resourceComponentId
+        INNER JOIN
+    Resources r ON r.resourceId = GETRESOURCEFROMCOMPONENT(rc.resourceComponentId)
+        LEFT OUTER JOIN
+    ResourcesComponents series ON GETTOPCOMPONENT(rc.resourceComponentId) = series.resourceComponentID
+WHERE
+    adi.barcode = ''
