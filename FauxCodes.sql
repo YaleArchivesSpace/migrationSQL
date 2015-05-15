@@ -147,3 +147,6 @@ update archDescriptionInstances set container1AlphaNumIndicator='CS2'
 where barcode like '%CS2%';
 update archDescriptionInstances set container1AlphaNumIndicator='CS1'
 where barcode like '%CS1%';
+
+/* Delete fauxcodes from aspace */
+update mssaaspace.top_container set barcode = null where barcode like '%Faux%';
