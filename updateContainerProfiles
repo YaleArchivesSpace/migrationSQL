@@ -775,3 +775,979 @@ WHERE  userdefinedstring2 = 'videotape';
 UPDATE archdescriptioninstances 
 SET    userdefinedstring2 = 'XDCAM' 
 WHERE  userdefinedstring2 = 'XDCAM'; 
+
+/* now update ASpace */
+use mssaaspace;
+SET height='4', depth='3.75', width='1.75' WHERE NAME='microfilm box'; 
+
+UPDATE container_profile 
+SET    height = '9', 
+       depth = '10.5', 
+       width = '2.5' 
+WHERE  NAME = 'flip top (11d 9h 2.5w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '8', 
+       width = '2.5' 
+WHERE  NAME = 'flip top (8d 6h 2.5)'; 
+
+UPDATE container_profile 
+SET    height = '10.25', 
+       depth = '15.5', 
+       width = '5' 
+WHERE  NAME = 'archive legal'; 
+
+UPDATE container_profile 
+SET    height = '', 
+       depth = '', 
+       width = '' 
+WHERE  NAME = 'archive legal tall'; 
+
+UPDATE container_profile 
+SET    height = '10.5', 
+       depth = '12.5', 
+       width = '5' 
+WHERE  NAME = 'archive letter'; 
+
+UPDATE container_profile 
+SET    height = '10.25', 
+       depth = '12.75', 
+       width = '7.25' 
+WHERE  NAME = 'archive letter oversize'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '8', 
+       width = '6' 
+WHERE  NAME = 'card box (8d 5h 6w)'; 
+
+UPDATE container_profile 
+SET    height = '2.75', 
+       depth = '4.25', 
+       width = '0.5' 
+WHERE  NAME = 'audiocassette case'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '11', 
+       width = '11' 
+WHERE  NAME = 'audiotape (10 inch)'; 
+
+UPDATE container_profile 
+SET    height = '9', 
+       depth = '12.5', 
+       width = '3' 
+WHERE  NAME = 'audiotape (3 inch)'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '5.5', 
+       width = '5.5' 
+WHERE  NAME = 'audiotape (5 inch)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '8', 
+       width = '8' 
+WHERE  NAME = 'audiotape (7 inch)'; 
+
+UPDATE container_profile 
+SET    height = '9', 
+       depth = '10.75', 
+       width = '4.25' 
+WHERE  NAME = 'flip top (10.75d 9h 4.25)'; 
+
+UPDATE container_profile 
+SET    height = '6.75', 
+       depth = '4.5', 
+       width = '1.25' 
+WHERE  NAME = 'video Beta'; 
+
+UPDATE container_profile 
+SET    height = '3.25', 
+       depth = '16.25', 
+       width = '11.5' 
+WHERE  NAME = 'legacy black'; 
+
+UPDATE container_profile 
+SET    height = '6.75', 
+       depth = '20.25', 
+       width = '9.75' 
+WHERE  NAME = 'legacy blue'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '25', 
+       width = '37' 
+WHERE  NAME = 'flat box (25d 2h 37w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '43', 
+       width = '32' 
+WHERE  NAME = 'flat box (43d 2h 32w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '12', 
+       width = '5' 
+WHERE  NAME = 'card box (12d 3h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '12', 
+       width = '6' 
+WHERE  NAME = 'card box (12d 4h 6w)'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '12', 
+       width = '8' 
+WHERE  NAME = 'card box (12d 5h 8w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '15', 
+       width = '9' 
+WHERE  NAME = 'card box (15d 6h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '5.75', 
+       width = '0.5' 
+WHERE  NAME = 'CD case'; 
+
+UPDATE container_profile 
+SET    height = '9', 
+       depth = '15', 
+       width = '21.5' 
+WHERE  NAME = 'chest'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '21.5', 
+       width = '11.5' 
+WHERE  NAME = 'custom (21.5d 1h 11.5w)'; 
+
+UPDATE container_profile 
+SET    height = '3.5', 
+       depth = '16', 
+       width = '11' 
+WHERE  NAME = 'custom (16d 3.5h 11w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '18.25', 
+       width = '12.25' 
+WHERE  NAME = 'custom (18.25d 2h 12.25w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '12.5', 
+       width = '12.5' 
+WHERE  NAME = 'custom (12.5d 2h 12.5w)'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '13', 
+       width = '12' 
+WHERE  NAME = 'custom (13d 0.75h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '3.5', 
+       depth = '15', 
+       width = '12' 
+WHERE  NAME = 'custom (15d 3.5h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '3.5', 
+       depth = '16', 
+       width = '12' 
+WHERE  NAME = 'custom (16d 3.5h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '13', 
+       width = '11' 
+WHERE  NAME = 'custom (13d 2h 11w)'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '16.25', 
+       width = '14.75' 
+WHERE  NAME = 'custom (16.25d 5h 14.75w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '14', 
+       width = '14' 
+WHERE  NAME = 'custom (14d 4h 14w)'; 
+
+UPDATE container_profile 
+SET    height = '2.25', 
+       depth = '26', 
+       width = '15' 
+WHERE  NAME = 'custom (26d 2.25h 15w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '16', 
+       width = '15' 
+WHERE  NAME = 'custom (16d 1h 15w)'; 
+
+UPDATE container_profile 
+SET    height = '7', 
+       depth = '16', 
+       width = '18' 
+WHERE  NAME = 'custom (16d 7h 18w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '28.5', 
+       width = '24.5' 
+WHERE  NAME = 'custom (28.5d 2h 24.5w)'; 
+
+UPDATE container_profile 
+SET    height = '3.25', 
+       depth = '12', 
+       width = '3.25' 
+WHERE  NAME = 'custom (12d 3.25h 3.25w)'; 
+
+UPDATE container_profile 
+SET    height = '5.5', 
+       depth = '6', 
+       width = '5' 
+WHERE  NAME = 'custom (6d 5.5h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '9.75', 
+       width = '7.25' 
+WHERE  NAME = 'custom (9.75d 1.5h 7.25w)'; 
+
+UPDATE container_profile 
+SET    height = '1.75', 
+       depth = '8.5', 
+       width = '6.5' 
+WHERE  NAME = 'custom (8.5d 1.75h 6.5w)'; 
+
+UPDATE container_profile 
+SET    height = '2.25', 
+       depth = '8.5', 
+       width = '6.5' 
+WHERE  NAME = 'custom (8.5d 2.25h 6.5w)'; 
+
+UPDATE container_profile 
+SET    height = '8.5', 
+       depth = '9.5', 
+       width = '19.5' 
+WHERE  NAME = 'custom (9.5d 8.5h 19.5w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '11', 
+       width = '9' 
+WHERE  NAME = 'custom (11d 2h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '3.75', 
+       width = '5.5' 
+WHERE  NAME = 'DVCAM'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '5.5', 
+       width = '0.25' 
+WHERE  NAME = 'DVD case'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '10.75', 
+       width = '10.75' 
+WHERE  NAME = 'film box (10.75d 1.5h 10.75w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '10', 
+       width = '10' 
+WHERE  NAME = 'film box (10d 1h 10w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '15', 
+       width = '15' 
+WHERE  NAME = 'film box (15d 1h 15w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '4', 
+       width = '4' 
+WHERE  NAME = 'film box (4d 1h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '5', 
+       width = '5' 
+WHERE  NAME = 'film box (5d 1h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '6', 
+       width = '6' 
+WHERE  NAME = 'film box (6d 1h 6w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '7', 
+       width = '7' 
+WHERE  NAME = 'film box (7d 1h 7w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '29', 
+       width = '23' 
+WHERE  NAME = 'flat box (29d 2h 23w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '31', 
+       width = '23' 
+WHERE  NAME = 'flat box (31d 3h 23w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '12.5', 
+       width = '10.75' 
+WHERE  NAME = 'flat box (12.5d 1.5h 10.75w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '12', 
+       width = '10' 
+WHERE  NAME = 'flat box (12d 3h 10w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '13', 
+       width = '10' 
+WHERE  NAME = 'flat box (13d 1.5h 10w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '13', 
+       width = '10' 
+WHERE  NAME = 'flat box (13d 3h 10w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '10.75', 
+       width = '8.75' 
+WHERE  NAME = 'flat box (10.75d 3h 8.75w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '15', 
+       width = '11.5' 
+WHERE  NAME = 'flat box (14d 1h 11.5w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '15', 
+       width = '11.5' 
+WHERE  NAME = 'flat box (15d 3h 11.5w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '17', 
+       width = '11' 
+WHERE  NAME = 'flat box (17d 1h 11w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '17', 
+       width = '11' 
+WHERE  NAME = 'flat box (17d 3h 11w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '16.5', 
+       width = '12.5' 
+WHERE  NAME = 'flat box (16.5d 3h 12.5w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '15', 
+       width = '12' 
+WHERE  NAME = 'flat box (15d 1.5h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '15', 
+       width = '12' 
+WHERE  NAME = 'flat box (15d 3h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '16', 
+       width = '12' 
+WHERE  NAME = 'flat box (16d 3h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '17', 
+       width = '12' 
+WHERE  NAME = 'flat box (17d 3h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '18', 
+       width = '13' 
+WHERE  NAME = 'flat box (18d 1h 13w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '18.25', 
+       width = '13.25' 
+WHERE  NAME = 'flat box (18.25d 3h 13.25w)'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '19', 
+       width = '13' 
+WHERE  NAME = 'flat box (19d 5h 13w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '14', 
+       width = '14' 
+WHERE  NAME = 'flat box (14d 1h 14w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '18', 
+       width = '14' 
+WHERE  NAME = 'flat box (18d 1h 14w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '18', 
+       width = '14' 
+WHERE  NAME = 'flat box (18d 3h 14w)'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '18', 
+       width = '14' 
+WHERE  NAME = 'flat box (18d 5h 14w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '15', 
+       width = '11' 
+WHERE  NAME = 'flat box (15d 3h 11w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '15', 
+       width = '12' 
+WHERE  NAME = 'flat box (15d 4h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '22', 
+       width = '15' 
+WHERE  NAME = 'flat box (22d 2h 15w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '18', 
+       width = '16' 
+WHERE  NAME = 'flat box (18d 3h 16w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '20', 
+       width = '16' 
+WHERE  NAME = 'flat box (20d 1h 16w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '20', 
+       width = '16' 
+WHERE  NAME = 'flat box (20d 3h 16w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '21', 
+       width = '17' 
+WHERE  NAME = 'flat box (21d 1.5h 17w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '21', 
+       width = '17' 
+WHERE  NAME = 'flat box (21d 2h 17w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '21', 
+       width = '17' 
+WHERE  NAME = 'flat box (21d 3h 17w)'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '25', 
+       width = '19' 
+WHERE  NAME = 'flat box (25d 5h 19w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '24', 
+       width = '20' 
+WHERE  NAME = 'flat box (24d 1h 20w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '24.75', 
+       width = '21' 
+WHERE  NAME = 'flat box (24.75d 3h 21w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '21', 
+       width = '17' 
+WHERE  NAME = 'flat box (21d 1h 17w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '25', 
+       width = '21' 
+WHERE  NAME = 'flat box (21d 1.5h 21w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '25', 
+       width = '21' 
+WHERE  NAME = 'flat box (25d 3h 21w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '28', 
+       width = '22' 
+WHERE  NAME = 'flat box (28d 1h 22w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '28', 
+       width = '22' 
+WHERE  NAME = 'flat box (28d 3h 22w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '30', 
+       width = '24' 
+WHERE  NAME = 'flat box (30d 1h 24w)'; 
+
+UPDATE container_profile 
+SET    height = '2.75', 
+       depth = '26.75', 
+       width = '26' 
+WHERE  NAME = 'flat box (26.75d 2.75h 26w)'; 
+
+UPDATE container_profile 
+SET    height = '2.75', 
+       depth = '32.5', 
+       width = '25.5' 
+WHERE  NAME = 'flat box (32.5d 2.75h 25.5w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '37.25', 
+       width = '25' 
+WHERE  NAME = 'flat box (37.25d 3h 25w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '31', 
+       width = '30' 
+WHERE  NAME = 'flat box (31d 2h 30w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '35', 
+       width = '30' 
+WHERE  NAME = 'flat box (35d 4h 30w)'; 
+
+UPDATE container_profile 
+SET    height = '2.5', 
+       depth = '36', 
+       width = '24' 
+WHERE  NAME = 'flat box (36d 2.5h 24w)'; 
+
+UPDATE container_profile 
+SET    height = '2.5', 
+       depth = '8', 
+       width = '5' 
+WHERE  NAME = 'flat box (8d 2.5h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '16', 
+       width = '7' 
+WHERE  NAME = 'flat box (16d 1.5h 7w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '10', 
+       width = '8.5' 
+WHERE  NAME = 'flat box (10d 1.5h 8.5)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '10', 
+       width = '8' 
+WHERE  NAME = 'flat box (10d 3h 8w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '12', 
+       width = '9' 
+WHERE  NAME = 'flat box (12d 1h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '12', 
+       width = '9' 
+WHERE  NAME = 'flat box (12d 3h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '14', 
+       width = '9' 
+WHERE  NAME = 'flat box (14d 1h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '17', 
+       width = '9' 
+WHERE  NAME = 'flat box (17d 2h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '10.5', 
+       depth = '15.5', 
+       width = '2.5' 
+WHERE  NAME = 'archive half legal'; 
+
+UPDATE container_profile 
+SET    height = '10.5', 
+       depth = '12.25', 
+       width = '2.5' 
+WHERE  NAME = 'archive half letter'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '4.25', 
+       width = '3' 
+WHERE  NAME = 'video Hi-8'; 
+
+UPDATE container_profile 
+SET    height = '4.5', 
+       depth = '10.75', 
+       width = '4.75' 
+WHERE  NAME = 'card box (10.75d 4.5h 4.5w)'; 
+
+UPDATE container_profile 
+SET    height = '10.25', 
+       depth = '50', 
+       width = '10.25' 
+WHERE  NAME = 'tube square (50d 10.25h 10.25w)'; 
+
+UPDATE container_profile 
+SET    height = '4.25', 
+       depth = '29.5', 
+       width = '4.25' 
+WHERE  NAME = 'tube square (29.5d 4.25h 4.25w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '41', 
+       width = '4' 
+WHERE  NAME = 'tube square (41d 4h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '8.5', 
+       depth = '40', 
+       width = '10.25' 
+WHERE  NAME = 'tube square (20d 8.5h 10.25w)'; 
+
+UPDATE container_profile 
+SET    height = '0.5', 
+       depth = '2.5', 
+       width = '1.5' 
+WHERE  NAME = 'microcassette'; 
+
+UPDATE container_profile 
+SET    height = '4.25', 
+       depth = '6.5', 
+       width = '4.25' 
+WHERE  NAME = 'flip top (6.5d 4.25h 4.25w)'; 
+
+UPDATE container_profile 
+SET    height = '4.25', 
+       depth = '6.5', 
+       width = '4.25' 
+WHERE  NAME = 'card box (6.5d 4.25h 4.25w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '7', 
+       width = '6' 
+WHERE  NAME = 'card box (7d 4h 6w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '12', 
+       width = '5' 
+WHERE  NAME = 'card box (12d 6h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '10', 
+       width = '10' 
+WHERE  NAME = 'film can (10d 1h 10w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '12', 
+       width = '12' 
+WHERE  NAME = 'film can (12d 1h 12w)'; 
+
+UPDATE container_profile 
+SET    height = '2', 
+       depth = '12', 
+       width = '12' 
+WHERE  NAME = 'film can 12d 2h 12w'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '15', 
+       width = '15' 
+WHERE  NAME = 'film can (15d 1h 15w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '4', 
+       width = '4' 
+WHERE  NAME = 'film can (4d 1h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '5', 
+       width = '5' 
+WHERE  NAME = 'film can (5d 1h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '7', 
+       width = '7' 
+WHERE  NAME = 'film can (7d 1h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '8', 
+       width = '8' 
+WHERE  NAME = 'film can (8d 1h 8d)'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '9', 
+       width = '9' 
+WHERE  NAME = 'film can (9d 1h 9d)'; 
+
+UPDATE container_profile 
+SET    height = '8.75', 
+       depth = '10.75', 
+       width = '4.25' 
+WHERE  NAME = 'card box (10.75d 8.75h 4.25w)'; 
+
+UPDATE container_profile 
+SET    height = '5', 
+       depth = '6', 
+       width = '2.5' 
+WHERE  NAME = 'card box (6d 5h 2.5w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '8', 
+       width = '3' 
+WHERE  NAME = 'card box (8d 6h 3w)'; 
+
+UPDATE container_profile 
+SET    height = '4', 
+       depth = '7', 
+       width = '2' 
+WHERE  NAME = 'card box (7d 4h 2w)'; 
+
+UPDATE container_profile 
+SET    height = '5.75', 
+       depth = '7.75', 
+       width = '4' 
+WHERE  NAME = 'card box (7.75d 5.75h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '10.5', 
+       depth = '15.5', 
+       width = '12.5' 
+WHERE  NAME = 'Paige 15'; 
+
+UPDATE container_profile 
+SET    height = '14.75', 
+       depth = '17.25', 
+       width = '13.5' 
+WHERE  NAME = 'Paige 17'; 
+
+UPDATE container_profile 
+SET    height = '10', 
+       depth = '7', 
+       width = '4' 
+WHERE  NAME = 'flip top (7d 10h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '10', 
+       depth = '5', 
+       width = '5' 
+WHERE  NAME = 'flip top (5d 10h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '11', 
+       depth = '9', 
+       width = '2.5' 
+WHERE  NAME = 'flip top (9d 11h 2.5w)'; 
+
+UPDATE container_profile 
+SET    height = '11', 
+       depth = '9', 
+       width = '4' 
+WHERE  NAME = 'flip top (9d 11h 4w)'; 
+
+UPDATE container_profile 
+SET    height = '12.5', 
+       depth = '9', 
+       width = '3' 
+WHERE  NAME = 'flip top (9d 12.5h 3w)'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '13.5', 
+       width = '13.5' 
+WHERE  NAME = 'flip top (13.5d 3h 13.5w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '8', 
+       width = '2.5' 
+WHERE  NAME = 'flip top (8d 6h 2.5w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '15.5', 
+       width = '13.25' 
+WHERE  NAME = 'legacy red'; 
+
+UPDATE container_profile 
+SET    height = '3', 
+       depth = '6', 
+       width = '5' 
+WHERE  NAME = 'card box (6d 3h 5w)'; 
+
+UPDATE container_profile 
+SET    height = '6', 
+       depth = '12', 
+       width = '9' 
+WHERE  NAME = 'card box (12d 6h 9w)'; 
+
+UPDATE container_profile 
+SET    height = '5.5', 
+       depth = '12.25', 
+       width = '7.75' 
+WHERE  NAME = 'card box (12.25d 5.5h 7.75w)'; 
+
+UPDATE container_profile 
+SET    height = '4.5', 
+       depth = '16.25', 
+       width = '8.25' 
+WHERE  NAME = 'card box (16.25d 4.5h 8.25w)'; 
+
+UPDATE container_profile 
+SET    height = '2.5', 
+       depth = '11.5', 
+       width = '6.25' 
+WHERE  NAME = 'card box (11.5d 2.5h 6.25w)'; 
+
+UPDATE container_profile 
+SET    height = '5.5', 
+       depth = '26.5', 
+       width = '5.5' 
+WHERE  NAME = 'tube (26.5d 5.5h 5.5w)'; 
+
+UPDATE container_profile 
+SET    height = '6.25', 
+       depth = '41', 
+       width = '6.25' 
+WHERE  NAME = 'tube square (41d 6.25h 6.25w)'; 
+
+UPDATE container_profile 
+SET    height = '1.5', 
+       depth = '10', 
+       width = '6.75' 
+WHERE  NAME = 'U-matic'; 
+
+UPDATE container_profile 
+SET    height = '7.75', 
+       depth = '7.75', 
+       width = '2.75' 
+WHERE  NAME = 'video (2 inch)'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '4', 
+       width = '2.75' 
+WHERE  NAME = 'video (8 mm)'; 
+
+UPDATE container_profile 
+SET    height = '1.25', 
+       depth = '8', 
+       width = '4' 
+WHERE  NAME = 'video DV'; 
+
+UPDATE container_profile 
+SET    height = '0.75', 
+       depth = '2.75', 
+       width = '4.75' 
+WHERE  NAME = 'Mini DV'; 
+
+UPDATE container_profile 
+SET    height = '1', 
+       depth = '5.75', 
+       width = '5.5' 
+WHERE  NAME = 'video (0.5 inch)'; 
+
+UPDATE container_profile 
+SET    height = '8', 
+       depth = '4.75', 
+       width = '1.25' 
+WHERE  NAME = 'video VHS'; 
+
+UPDATE container_profile 
+SET    height = '2.5', 
+       depth = '13.5', 
+       width = '13.5' 
+WHERE  NAME = 'flat box (13.5d 2.5h 13.5w)'; 
+
+UPDATE container_profile 
+SET    height = '0.5', 
+       depth = '6.5', 
+       width = '5.75' 
+WHERE  NAME = 'XDCAM'; 
