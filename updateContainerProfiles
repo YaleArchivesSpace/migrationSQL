@@ -1,1 +1,777 @@
 /* buncha sql to update container profile values */
+/* to run on AT pre-migration */
+use mssa;
+update archdescriptioninstances
+set userDefinedString2=''
+where userDefinedString2='16_mm_reel'
+or userDefinedString2='audiotape_box'
+or userDefinedString2='box'
+or userDefinedString2='Box'
+or userDefinedString2='card'
+or userDefinedString2='carton'
+or userDefinedString2='custom'
+or userDefinedString2='custom'
+or userDefinedString2='custom20x31x3'
+or userDefinedString2='envelope'
+or userDefinedString2='folder'
+or userDefinedString2='folio'
+or userDefinedString2='folio'
+or userDefinedString2='folio_folder'
+or userDefinedString2='folio_folder'
+or userDefinedString2='grey'
+or userDefinedString2='letter'
+or userDefinedString2='metal_card_file'
+or userDefinedString2='microfiche6x12x5 microfiche6x12x5'
+or userDefinedString2='other'
+or userDefinedString2='other'
+or userDefinedString2='oversize'
+or userDefinedString2='oversize'
+or userDefinedString2='oversize_map_folder'
+or userDefinedString2='Reel'
+or userDefinedString2='slide'
+or userDefinedString2='small_black'
+or userDefinedString2='small_blue'
+or userDefinedString2='unknown'
+or userDefinedString2='unknown'
+or userDefinedString2='various'
+or userDefinedString2='Volume'
+or userDefinedString2='Volume'
+or userDefinedString2='X-ray'
+or userDefinedString2='carton'
+or userDefinedString2='wood'
+or userDefinedString2='Folder'
+or userDefinedString2='tube';
+
+USE mssa; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'microfilm box' 
+WHERE  userdefinedstring2 = '35_mm_film'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (11d 9h 2.5w)' 
+WHERE  userdefinedstring2 = 'archive10.5x9x2.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (8d 6h 2.5)' 
+WHERE  userdefinedstring2 = 'archive8x6x2.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive legal' 
+WHERE  userdefinedstring2 = 'archive_legal'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive legal tall' 
+WHERE  userdefinedstring2 = 'archive_legal_ov'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive legal tall' 
+WHERE  userdefinedstring2 = 'archive_legal_tall'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive letter' 
+WHERE  userdefinedstring2 = 'archive_letter'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive letter oversize' 
+WHERE  userdefinedstring2 = 'archive_letter_ov'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive legal tall' 
+WHERE  userdefinedstring2 = 'archive_letter_tall'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (8d 5h 6w)' 
+WHERE  userdefinedstring2 = 'artifact_box_8x5x6'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiocassette case' 
+WHERE  userdefinedstring2 = 'audiocassette_box'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiocassette case' 
+WHERE  userdefinedstring2 = 'audiocassette_case'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiotape (10 inch)' 
+WHERE  userdefinedstring2 = 'audiotape10'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiotape (3 inch)' 
+WHERE  userdefinedstring2 = 'audiotape3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiotape (5 inch)' 
+WHERE  userdefinedstring2 = 'audiotape5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiotape (7 inch)' 
+WHERE  userdefinedstring2 = 'audiotape7'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (10.75d 9h 4.25)' 
+WHERE  userdefinedstring2 = 'baby_archive'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Beta' 
+WHERE  userdefinedstring2 = 'beta_small'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Beta' 
+WHERE  userdefinedstring2 = 'betacam_SP'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'legacy black' 
+WHERE  userdefinedstring2 = 'black'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'legacy blue' 
+WHERE  userdefinedstring2 = 'blue'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (25d 2h 37w)' 
+WHERE  userdefinedstring2 = 'bully25x37x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (43d 2h 32w)' 
+WHERE  userdefinedstring2 = 'bully31x43x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 3h 5w)' 
+WHERE  userdefinedstring2 = 'card5x12x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 4h 6w)' 
+WHERE  userdefinedstring2 = 'card6x12x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 5h 8w)' 
+WHERE  userdefinedstring2 = 'card8x12x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (15d 6h 9w)' 
+WHERE  userdefinedstring2 = 'card9x15x6'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'audiocassette case' 
+WHERE  userdefinedstring2 = 'cassette'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'CD case' 
+WHERE  userdefinedstring2 = 'CD_case'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'chest' 
+WHERE  userdefinedstring2 = 'chest'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (21.5d 1h 11.5w)' 
+WHERE  userdefinedstring2 = 'Custom11.5x21.5x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (16d 3.5h 11w)' 
+WHERE  userdefinedstring2 = 'custom11x16x3.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (18.25d 2h 12.25w)' 
+WHERE  userdefinedstring2 = 'custom12.25x18.25x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (12.5d 2h 12.5w)' 
+WHERE  userdefinedstring2 = 'custom12.5x12.5x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (13d 0.75h 12w)' 
+WHERE  userdefinedstring2 = 'custom12x13x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (15d 3.5h 12w)' 
+WHERE  userdefinedstring2 = 'custom12x15x3.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (16d 3.5h 12w)' 
+WHERE  userdefinedstring2 = 'custom12x16x3.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (13d 2h 11w)' 
+WHERE  userdefinedstring2 = 'custom13x11x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (16.25d 5h 14.75w)' 
+WHERE  userdefinedstring2 = 'custom14.75x16.25x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (14d 4h 14w)' 
+WHERE  userdefinedstring2 = 'custom14x14x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (26d 2.25h 15w)' 
+WHERE  userdefinedstring2 = 'custom15x26x2.25'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (16d 1h 15w)' 
+WHERE  userdefinedstring2 = 'custom16x15x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (16d 7h 18w)' 
+WHERE  userdefinedstring2 = 'custom16x18x7'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (28.5d 2h 24.5w)' 
+WHERE  userdefinedstring2 = 'Custom24.5x28.5x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (12d 3.25h 3.25w)' 
+WHERE  userdefinedstring2 = 'custom3.25x12x3.25'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (6d 5.5h 5w)' 
+WHERE  userdefinedstring2 = 'custom6x5x6'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (9.75d 1.5h 7.25w)' 
+WHERE  userdefinedstring2 = 'custom7.25x9.75x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (8.5d 1.75h 6.5w)' 
+WHERE  userdefinedstring2 = 'custom8.5x6.5x1.75'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (8.5d 2.25h 6.5w)' 
+WHERE  userdefinedstring2 = 'custom8.5x6.5x2.25'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (9.5d 8.5h 19.5w)' 
+WHERE  userdefinedstring2 = 'custom9.5x19.5x8.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'custom (11d 2h 9w)' 
+WHERE  userdefinedstring2 = 'custom9x11x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'DVCAM' 
+WHERE  userdefinedstring2 = 'DVCAM'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'DVD case' 
+WHERE  userdefinedstring2 = 'DVD_case'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (10.75d 1.5h 10.75w)' 
+WHERE  userdefinedstring2 = 'filmbox10.75'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (10d 1h 10w)' 
+WHERE  userdefinedstring2 = 'filmbox10x10x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (15d 1h 15w)' 
+WHERE  userdefinedstring2 = 'filmbox15x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (4d 1h 4w)' 
+WHERE  userdefinedstring2 = 'filmbox4x4x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (5d 1h 5w)' 
+WHERE  userdefinedstring2 = 'filmbox5x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (6d 1h 6w)' 
+WHERE  userdefinedstring2 = 'filmbox6x6x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film box (7d 1h 7w)' 
+WHERE  userdefinedstring2 = 'filmbox7x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (29d 2h 23w)' 
+WHERE  userdefinedstring2 = 'flat_black23x29x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (31d 3h 23w)' 
+WHERE  userdefinedstring2 = 'flat_black23x31x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (12.5d 1.5h 10.75w)' 
+WHERE  userdefinedstring2 = 'flat_grey10x12x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (12d 3h 10w)' 
+WHERE  userdefinedstring2 = 'flat_grey10x12x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (13d 1.5h 10w)' 
+WHERE  userdefinedstring2 = 'flat_grey10x13x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (13d 3h 10w)' 
+WHERE  userdefinedstring2 = 'flat_grey10x13x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (10.75d 3h 8.75w)' 
+WHERE  userdefinedstring2 = 'flat_grey10x8x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (14d 1h 11.5w)' 
+WHERE  userdefinedstring2 = 'flat_grey11.5x15x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (15d 3h 11.5w)' 
+WHERE  userdefinedstring2 = 'flat_grey11.5x15x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (17d 1h 11w)' 
+WHERE  userdefinedstring2 = 'flat_grey11x17x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (17d 3h 11w)' 
+WHERE  userdefinedstring2 = 'flat_grey11x17x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (16.5d 3h 12.5w)' 
+WHERE  userdefinedstring2 = 'flat_grey12.5x16.5x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (15d 1.5h 12w)' 
+WHERE  userdefinedstring2 = 'flat_grey12x15x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (15d 3h 12w)' 
+WHERE  userdefinedstring2 = 'flat_grey12x15x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (16d 3h 12w)' 
+WHERE  userdefinedstring2 = 'flat_grey12x16x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (17d 3h 12w)' 
+WHERE  userdefinedstring2 = 'flat_grey12x17x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (18d 1h 13w)' 
+WHERE  userdefinedstring2 = 'flat_grey13x18x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (18.25d 3h 13.25w)' 
+WHERE  userdefinedstring2 = 'flat_grey13x18x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (19d 5h 13w)' 
+WHERE  userdefinedstring2 = 'flat_grey13x19x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (14d 1h 14w)' 
+WHERE  userdefinedstring2 = 'flat_grey14x14x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (18d 1h 14w)' 
+WHERE  userdefinedstring2 = 'flat_grey14x18x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (18d 3h 14w)' 
+WHERE  userdefinedstring2 = 'flat_grey14x18x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (18d 5h 14w)' 
+WHERE  userdefinedstring2 = 'flat_grey14x18x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (15d 3h 11w)' 
+WHERE  userdefinedstring2 = 'flat_grey15x11x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (15d 4h 12w)' 
+WHERE  userdefinedstring2 = 'flat_grey15x12x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (22d 2h 15w)' 
+WHERE  userdefinedstring2 = 'flat_grey15x22x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (18d 3h 16w)' 
+WHERE  userdefinedstring2 = 'flat_grey16x18x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (20d 1h 16w)' 
+WHERE  userdefinedstring2 = 'flat_grey16x20x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (20d 3h 16w)' 
+WHERE  userdefinedstring2 = 'flat_grey16x20x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (21d 1.5h 17w)' 
+WHERE  userdefinedstring2 = 'flat_grey17x21x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (21d 2h 17w)' 
+WHERE  userdefinedstring2 = 'flat_grey17x21x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (21d 3h 17w)' 
+WHERE  userdefinedstring2 = 'flat_grey17x21x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (25d 5h 19w)' 
+WHERE  userdefinedstring2 = 'flat_grey19x25x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (24d 1h 20w)' 
+WHERE  userdefinedstring2 = 'flat_grey20x24x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (24.75d 3h 21w)' 
+WHERE  userdefinedstring2 = 'flat_grey20x24x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (21d 1h 17w)' 
+WHERE  userdefinedstring2 = 'flat_grey21x17x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (21d 1.5h 21w)' 
+WHERE  userdefinedstring2 = 'flat_grey21x25x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (25d 3h 21w)' 
+WHERE  userdefinedstring2 = 'flat_grey21x25x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (28d 1h 22w)' 
+WHERE  userdefinedstring2 = 'flat_grey22x28x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (28d 3h 22w)' 
+WHERE  userdefinedstring2 = 'flat_grey22x28x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (29d 2h 23w)' 
+WHERE  userdefinedstring2 = 'flat_grey23x29x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (31d 3h 23w)' 
+WHERE  userdefinedstring2 = 'flat_grey23x31x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (30d 1h 24w)' 
+WHERE  userdefinedstring2 = 'flat_grey24x30x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (26.75d 2.75h 26w)' 
+WHERE  userdefinedstring2 = 'flat_grey25x27x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (32.5d 2.75h 25.5w)' 
+WHERE  userdefinedstring2 = 'flat_grey25x32x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (37.25d 3h 25w)' 
+WHERE  userdefinedstring2 = 'flat_grey25x36x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (31d 2h 30w)' 
+WHERE  userdefinedstring2 = 'flat_grey30x31x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (35d 4h 30w)' 
+WHERE  userdefinedstring2 = 'flat_grey30x35x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (31d 3h 23w)' 
+WHERE  userdefinedstring2 = 'flat_grey31X23X3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (36d 2.5h 24w)' 
+WHERE  userdefinedstring2 = 'flat_grey36x24x2.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (8d 2.5h 5w)' 
+WHERE  userdefinedstring2 = 'flat_grey5x8x2.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (16d 1.5h 7w)' 
+WHERE  userdefinedstring2 = 'flat_grey7x16x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (10d 1.5h 8.5)' 
+WHERE  userdefinedstring2 = 'flat_grey8.5x10x1.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (10d 3h 8w)' 
+WHERE  userdefinedstring2 = 'flat_grey8x10x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (12d 1h 9w)' 
+WHERE  userdefinedstring2 = 'flat_grey9x12x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (12d 3h 9w)' 
+WHERE  userdefinedstring2 = 'flat_grey9x12x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (14d 1h 9w)' 
+WHERE  userdefinedstring2 = 'flat_grey9x14x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (17d 2h 9w)' 
+WHERE  userdefinedstring2 = 'flat_grey9x17x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive half legal' 
+WHERE  userdefinedstring2 = 'half_archive_legal'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'archive half letter' 
+WHERE  userdefinedstring2 = 'half_archive_letter'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Hi-8' 
+WHERE  userdefinedstring2 = 'hi-8'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (10.75d 4.5h 4.5w)' 
+WHERE  userdefinedstring2 = 'lantern_slide4x4x10'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'tube square (50d 10.25h 10.25w)' 
+WHERE  userdefinedstring2 = 'map-print10x10x50'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'tube square (29.5d 4.25h 4.25w)' 
+WHERE  userdefinedstring2 = 'map-print4x4x25'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'tube square (41d 4h 4w)' 
+WHERE  userdefinedstring2 = 'map-print5x5x41'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'tube square (20d 8.5h 10.25w)' 
+WHERE  userdefinedstring2 = 'map-print8x10x40'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'microcassette' 
+WHERE  userdefinedstring2 = 'microcassette'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (6.5d 4.25h 4.25w)' 
+WHERE  userdefinedstring2 = 'microfiche'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (6.5d 4.25h 4.25w)' 
+WHERE  userdefinedstring2 = 'microfiche4x6x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (7d 4h 6w)' 
+WHERE  userdefinedstring2 = 'microfiche4x6x7'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 6h 5w)' 
+WHERE  userdefinedstring2 = 'microfiche6x12x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'microfilm box' 
+WHERE  userdefinedstring2 = 'microfilm'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (10d 1h 10w)' 
+WHERE  userdefinedstring2 = 'movie_film_can10x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (12d 1h 12w)' 
+WHERE  userdefinedstring2 = 'movie_film_can12x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can 12d 2h 12w' 
+WHERE  userdefinedstring2 = 'movie_film_can12x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (15d 1h 15w)' 
+WHERE  userdefinedstring2 = 'movie_film_can15x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (4d 1h 4w)' 
+WHERE  userdefinedstring2 = 'movie_film_can4x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (5d 1h 4w)' 
+WHERE  userdefinedstring2 = 'movie_film_can5x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (7d 1h 5w)' 
+WHERE  userdefinedstring2 = 'movie_film_can7x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (8d 1h 8d)' 
+WHERE  userdefinedstring2 = 'movie_film_can8x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'film can (9d 1h 9d)' 
+WHERE  userdefinedstring2 = 'movie_film_can9x1'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (10.75d 8.75h 4.25w)' 
+WHERE  userdefinedstring2 = 'negative10x4x8'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (6d 5h 2.5w)' 
+WHERE  userdefinedstring2 = 'negative5x2x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (8d 6h 3w)' 
+WHERE  userdefinedstring2 = 'negative6x8x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (7d 4h 2w)' 
+WHERE  userdefinedstring2 = 'negative7x2x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (7.75d 5.75h 4w)' 
+WHERE  userdefinedstring2 = 'negative7x4x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'Paige 15' 
+WHERE  userdefinedstring2 = 'paige_15'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'Paige 17' 
+WHERE  userdefinedstring2 = 'paige_17'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (7d 10h 4w)' 
+WHERE  userdefinedstring2 = 'pamphlet10x7x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (5d 10h 5w)' 
+WHERE  userdefinedstring2 = 'pamphlet5x10x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (9d 11h 2.5w)' 
+WHERE  userdefinedstring2 = 'pamphlet9 x11x2.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (9d 11h 2.5w)' 
+WHERE  userdefinedstring2 = 'pamphlet9x11x2.5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (9d 11h 4w)' 
+WHERE  userdefinedstring2 = 'pamphlet9x11x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (7d 10h 4w)' 
+WHERE  userdefinedstring2 = 'pamphlet_hinged_lid'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (9d 12.5h 3w)' 
+WHERE  userdefinedstring2 = 'pamphlet_letter'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (13.5d 3h 13.5w)' 
+WHERE  userdefinedstring2 = 'phonograph_13.5x13.5x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (8d 6h 2.5w)' 
+WHERE  userdefinedstring2 = 'photo_archive'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'legacy red' 
+WHERE  userdefinedstring2 = 'red'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (6d 3h 5w)' 
+WHERE  userdefinedstring2 = 'shoe5x6x3'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 4h 6w)' 
+WHERE  userdefinedstring2 = 'shoe6x12x4'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 6h 9w)' 
+WHERE  userdefinedstring2 = 'shoe6x12x9'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12.25d 5.5h 7.75w)' 
+WHERE  userdefinedstring2 = 'shoe7x12x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (12d 5h 8w)' 
+WHERE  userdefinedstring2 = 'shoe8x12x5'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (16.25d 4.5h 8.25w)' 
+WHERE  userdefinedstring2 = 'slide'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'card box (11.5d 2.5h 6.25w)' 
+WHERE  userdefinedstring2 = 'slide6x11x2'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flip top (11d 9h 2.5w)' 
+WHERE  userdefinedstring2 = 'small_archive'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'tube (26.5d 5.5h 5.5w)' 
+WHERE  userdefinedstring2 = 'tube_5x26.5x28'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'tube square (41d 6.25h 6.25w)' 
+WHERE  userdefinedstring2 = 'tube_square44'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'U-matic' 
+WHERE  userdefinedstring2 = 'U-Matic'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video (2 inch)' 
+WHERE  userdefinedstring2 = 'video_2inch'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video (8 mm)' 
+WHERE  userdefinedstring2 = 'video_8mm'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Beta' 
+WHERE  userdefinedstring2 = 'video_Betacam'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Beta' 
+WHERE  userdefinedstring2 = 'video_Betamax'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Beta' 
+WHERE  userdefinedstring2 = 'video_BetaSP'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video DV' 
+WHERE  userdefinedstring2 = 'video_DV'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video Hi-8' 
+WHERE  userdefinedstring2 = 'video_Hi-8'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'Mini DV' 
+WHERE  userdefinedstring2 = 'video_MiniDV'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'U-matic' 
+WHERE  userdefinedstring2 = 'video_U-matic'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video (0.5 inch)' 
+WHERE  userdefinedstring2 = 'video_V-30H'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video VHS' 
+WHERE  userdefinedstring2 = 'video_VHS'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'video VHS' 
+WHERE  userdefinedstring2 = 'videocassette'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'flat box (13.5d 2.5h 13.5w)' 
+WHERE  userdefinedstring2 = 'videotape'; 
+
+UPDATE archdescriptioninstances 
+SET    userdefinedstring2 = 'XDCAM' 
+WHERE  userdefinedstring2 = 'XDCAM'; 
