@@ -1,8 +1,30 @@
-# move userDefinedText1 to inventory column
-update accessions
+use brbl_at;
+
+/* move userDefinedText1 to inventory column */
+update Accessions
 set inventory = userDefinedText1
 where userDefinedText1 is not null;
-#and then delete userDefinedText1 from the database.
-update accessions
+
+/* and then delete userDefinedText1 from the database. */
+update Accessions
 set userDefinedText1 = null
 where userDefinedText1 is not null;
+
+/*step 1 (fixing up Accession stuf)*/
+update Accessions
+set accessionProcessedDate = '2012-01-01'
+ where accessionProcessed = 1 and accessionProcessedDate is null;
+
+ 
+ /*step 2*/
+ update Accessions
+ set userDefinedDate2 = accessionProcessedDate
+ where accessionProcessedDate is not null;
+
+ 
+ /* step 3*/
+ update Accessions
+ set accessionProcessed = null,
+ accessionProcessedDate = null;
+
+
