@@ -65,7 +65,6 @@ set otherLevel='',
 resourceLevel='series'
 where resourceLevel='otherlevel'
 and otherLevel='Oversize'
-or otherLevel='RestrictedFragile'
-or otherLevel='series';
+or otherLevel='RestrictedFragile';
 
 
