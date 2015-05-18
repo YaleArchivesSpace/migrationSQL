@@ -27,4 +27,23 @@ set accessionProcessedDate = '2012-01-01'
  set accessionProcessed = null,
  accessionProcessedDate = null;
 
+/* Update levels */
+use brbl_at;
+update resourcesComponents
+set resourceLevel='file'
+where resourceLevel='fonds'
+or resourceLevel='class'
+or resourceLevel='collection';
 
+update resourcesComponents
+set otherLevel='',
+resourceLevel='file'
+where resourceLevel='otherlevel'
+and otherLevel='';
+
+update resourcesComponents
+set otherLevel='accession'
+where otherLevel='Acquisition'
+or otherLevel='Acqusition'
+or otherLevel='accessions'
+or otherLevel='accesion';
