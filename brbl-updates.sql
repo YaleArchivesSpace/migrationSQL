@@ -47,3 +47,25 @@ where otherLevel='Acquisition'
 or otherLevel='Acqusition'
 or otherLevel='accessions'
 or otherLevel='accesion';
+
+update resourcesComponents
+set otherLevel='',
+resourceLevel='file'
+where resourceLevel='otherlevel'
+and otherLevel='Heading'
+or otherLevel='heading'
+or otherLevel='subheadings'
+or otherLevel='Subheading'
+or otherLevel='subgroup'
+or otherLevel='section'
+or otherLevel='subset';
+
+update resourcesComponents
+set otherLevel='',
+resourceLevel='series'
+where resourceLevel='otherlevel'
+and otherLevel='Oversize'
+or otherLevel='RestrictedFragile'
+or otherLevel='series';
+
+
