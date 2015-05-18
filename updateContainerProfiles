@@ -778,6 +778,7 @@ WHERE  userdefinedstring2 = 'XDCAM';
 
 /* now update ASpace */
 use mssaaspace;
+update container_profile
 SET height='4', depth='3.75', width='1.75' WHERE NAME='microfilm box'; 
 
 UPDATE container_profile 
