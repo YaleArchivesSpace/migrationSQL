@@ -52,19 +52,20 @@ update resourcesComponents
 set otherLevel='',
 resourceLevel='file'
 where resourceLevel='otherlevel'
-and otherLevel='Heading'
+and (otherLevel='Heading'
 or otherLevel='heading'
 or otherLevel='subheadings'
 or otherLevel='Subheading'
 or otherLevel='subgroup'
 or otherLevel='section'
-or otherLevel='subset';
+or otherLevel='subset');
 
 update resourcesComponents
 set otherLevel='',
 resourceLevel='series'
 where resourceLevel='otherlevel'
-and otherLevel='Oversize'
-or otherLevel='RestrictedFragile';
+and (otherLevel='Oversize'
+or otherLevel='RestrictedFragile'
+or otherLevel='restricted');
 
 
