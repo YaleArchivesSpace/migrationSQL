@@ -1,5 +1,5 @@
 # migrationSQL
-sql scripts to help meet new models for accession table data
+sql scripts to help support Yale's migration
 
 1. Pre-migration script AllDatabasesPreMigration.sql
   * Changes NS2 to xlink
