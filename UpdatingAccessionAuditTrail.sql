@@ -21,7 +21,7 @@ Write the update statement into ASpace
 (from AT) */
 
 Select title
-		, concat('["', accessionNumber1, ','
+		, concat('["', accessionNumber1, '",'
 			, if(accessionNumber2 = '', 'null', concat('"', accessionNumber2, '"')), ','
 			, if(accessionNumber3 = '', 'null', concat('"', accessionNumber3, '"')), ','
 			, if(accessionNumber4 = '', 'null', concat('"', accessionNumber4, '"')), "]")
