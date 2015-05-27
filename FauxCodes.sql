@@ -80,12 +80,13 @@ SET
             '.',
             adi.container1Type,
             IFNULL(adi.container1NumericIndicator, ''),
-            IFNULL(adi.container1AlphaNumIndicator, ''))
+            IFNULL(substring_index(adi.container1AlphaNumIndicator, 'F', 1), '')) fauxcode /*updated per Mary's email*/
 WHERE
     adi.barcode = '';
 update archDescriptionInstances set barcode=replace(barcode, ' ', '');
 
 /* move common slide indicators into proper fields*/
+/* not sure why these updates are required, but during the test migration i'm running these SQL updates in order */
 UPDATE mssa.archdescriptioninstances 
 SET 
     container2NumericIndicator = RIGHT(container1AlphaNumIndicator,
