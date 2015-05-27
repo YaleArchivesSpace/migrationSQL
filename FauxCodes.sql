@@ -80,7 +80,7 @@ SET
             '.',
             adi.container1Type,
             IFNULL(adi.container1NumericIndicator, ''),
-            IFNULL(substring_index(adi.container1AlphaNumIndicator, 'F', 1), '')) fauxcode /*updated per Mary's email*/
+            IFNULL(substring_index(adi.container1AlphaNumIndicator, 'F', 1), '') /*updated per Mary's email*/
 WHERE
     adi.barcode = '';
 update archDescriptionInstances set barcode=replace(barcode, ' ', '');
