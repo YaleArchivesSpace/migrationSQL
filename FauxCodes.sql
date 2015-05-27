@@ -49,7 +49,7 @@ SELECT
             '.',
             adi.container1Type,
             IFNULL(adi.container1NumericIndicator, ''),
-            IFNULL(adi.container1AlphaNumIndicator, '')) fauxcode
+            IFNULL(substring_index(adi.container1AlphaNumIndicator, 'F', 1), '')) fauxcode /*updated per Mary's email*/
 FROM
     ArchDescriptionInstances adi
         JOIN
