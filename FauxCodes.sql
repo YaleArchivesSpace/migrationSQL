@@ -86,7 +86,24 @@ WHERE
 update archDescriptionInstances set barcode=replace(barcode, ' ', '');
 
 /* move common slide indicators into proper fields*/
-/* not sure why these updates are required, but during the test migration i'm running these SQL updates in order */
+/* i get an SQL error when running the next bit.  
+how does this work, instead?:
+
+UPDATE mssa.archdescriptioninstances 
+SET container2NumericIndicator = substring_index(container1AlphaNumIndicator, 'F', -1)
+    , container1AlphaNumIndicator = substring_index(container1AlphaNumIndicator, 'F', 1)
+    , container2Type = 'Folder'
+WHERE container1AlphaNumIndicator LIKE '%CS%';
+
+here's a select statement to test it out before running for real:
+select container1AlphaNumIndicator
+, substring_index(container1AlphaNumIndicator, 'F', 1) as box
+, substring_index(container1AlphaNumIndicator, 'F', -1) as folder
+from archdescriptioninstances
+WHERE
+    container1AlphaNumIndicator LIKE '%CS%'
+
+*/
 UPDATE mssa.archdescriptioninstances 
 SET 
     container2NumericIndicator = RIGHT(container1AlphaNumIndicator,
