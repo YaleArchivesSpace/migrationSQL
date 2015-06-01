@@ -61,6 +61,21 @@ FROM
 WHERE
     adi.barcode = ''
 
+/* move common slide indicators into proper fields*/
+UPDATE mssa.archdescriptioninstances 
+SET container2NumericIndicator = substring_index(container1AlphaNumIndicator, 'F', -1)
+    , container1AlphaNumIndicator = substring_index(container1AlphaNumIndicator, 'F', 1)
+    , container2Type = 'Folder'
+WHERE container1AlphaNumIndicator LIKE '%CS%';
+
+/* here's a select statement to test it out before running for real:
+select container1AlphaNumIndicator
+, substring_index(container1AlphaNumIndicator, 'F', 1) as box
+, substring_index(container1AlphaNumIndicator, 'F', -1) as folder
+from archdescriptioninstances
+WHERE
+    container1AlphaNumIndicator LIKE '%CS%'
+
 /* Now run the fauxcodes! */
 use mssa;
 UPDATE ArchDescriptionInstances adi
@@ -85,34 +100,7 @@ WHERE
     adi.barcode = '';
 update archDescriptionInstances set barcode=replace(barcode, ' ', '');
 
-/* move common slide indicators into proper fields*/
-/* i get an SQL error when running the next bit.  
-how does this work, instead?:
 
-UPDATE mssa.archdescriptioninstances 
-SET container2NumericIndicator = substring_index(container1AlphaNumIndicator, 'F', -1)
-    , container1AlphaNumIndicator = substring_index(container1AlphaNumIndicator, 'F', 1)
-    , container2Type = 'Folder'
-WHERE container1AlphaNumIndicator LIKE '%CS%';
-
-here's a select statement to test it out before running for real:
-select container1AlphaNumIndicator
-, substring_index(container1AlphaNumIndicator, 'F', 1) as box
-, substring_index(container1AlphaNumIndicator, 'F', -1) as folder
-from archdescriptioninstances
-WHERE
-    container1AlphaNumIndicator LIKE '%CS%'
-
-*/
-UPDATE mssa.archdescriptioninstances 
-SET 
-    container2NumericIndicator = RIGHT(container1AlphaNumIndicator,
-        LOCATE('F', container1AlphaNumIndicator) - 2),
-    container1AlphaNumIndicator = LEFT(container1AlphaNumIndicator,
-        LOCATE('F', container1AlphaNumIndicator) - 1),
-        container2Type = 'Folder'
-WHERE
-    container1AlphaNumIndicator LIKE '%CS%'
 
 /* Delete fauxcodes from aspace */
 update mssaaspace.top_container set barcode = null where barcode like '%Faux%';
