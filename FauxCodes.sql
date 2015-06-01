@@ -49,7 +49,7 @@ SELECT
             '.',
             adi.container1Type,
             IFNULL(adi.container1NumericIndicator, ''),
-            IFNULL(substring_index(adi.container1AlphaNumIndicator, 'F', 1), '')) fauxcode /*updated per Mary's email*/
+            IFNULL(adi.container1AlphaNumIndicator, '')) fauxcode /*updated per Mary's email*/
 FROM
     ArchDescriptionInstances adi
         JOIN
@@ -95,7 +95,7 @@ SET
             '.',
             adi.container1Type,
             IFNULL(adi.container1NumericIndicator, ''),
-            IFNULL(substring_index(adi.container1AlphaNumIndicator, 'F', 1), '')) /*updated per Mary's email*/
+            IFNULL(adi.container1AlphaNumIndicator, ''))
 WHERE
     adi.barcode = '';
 update archDescriptionInstances set barcode=replace(barcode, ' ', '');
