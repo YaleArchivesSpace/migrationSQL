@@ -1,0 +1,27 @@
+use proddb_aspace;
+/*update those material codes with values we parked in the inventory field*/
+insert into material_types 
+(accession_id
+,json_schema_version
+,works_of_art,audiovisual_materials,books,electronic_documents,games,microforms,maps,manuscripts,photographs,realia,serials
+,created_by,last_modified_by
+,create_time,system_mtime,user_mtime)
+SELECT id, 1 as json
+,CASE when locate('ar', inventory) > 0 then 1 else 0 end as art
+,CASE when locate('av', inventory) > 0 then 1 else 0 end as av
+,0 as books
+,CASE when locate('cf', inventory) > 0 then 1 else 0 end as elec
+,0 as games
+,CASE when locate('mi', inventory) > 0 then 1 else 0 end as micro
+,0 as maps
+,CASE when locate('ms', inventory) > 0 then 1 else 0 end as manu
+,CASE when locate('ph', inventory) > 0 then 1 else 0 end as phot
+,0 as realia
+,CASE when locate('se', inventory) > 0 then 1 else 0 end as serial
+,'admin','admin'
+,now(),now(),now() from accession 
+where repo_id=11;
+/*lastly, remove those inventory field values*/
+update accession
+set inventory = null
+where repo_id=11;
